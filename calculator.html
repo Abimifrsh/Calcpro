@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calc Pro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CalcPro</title>
+  <link rel="stylesheet" href="calculator.css" />
 </head>
 <body>
-    <link rel="stylesheet" href="calculator.css">
-    <script src="calculator.js"></script>
-    <section class="buttons">
-  <!-- Row 1 -->
-  <button data-action="clear">C</button>
-  <button data-number="0">0</button>
-  <button data-number="1">1</button>
-  <button data-number="2">2</button>
-  <button data-number="3">3</button>
 
-  <!-- Row 2 -->
-  <button class="add" data-action="add">+</button>
-  <button data-number="4">4</button>
-  <button data-number="5">5</button>
-  <button data-number="6">6</button>
+  <main class="container">
+    <div class="calculator">
+      <button id="theme-toggle">🌙 / ☀️</button>
+      <div id="calculator-logo">
+  <span>Calc</span><span class="pro">Pro</span>
+</div>
 
-  <!-- Row 3 -->
-  <button class="subtract" data-action="subtract">−</button>
-  <button data-number="7">7</button>
-  <button data-number="8">8</button>
-  <button data-number="9">9</button>
+      <!-- Display -->
+      <div id="display" class="display">0</div>
 
-  <!-- Row 4 -->
-  <button class="multiply" data-action="multiply">×</button>
-  <button data-number="0" class="zero">0</button>
-  <button data-number=".">.</button>
+      <!-- Buttons -->
+      <div class="buttons">
 
-  <!-- Row 5 -->
-  <button class="divide" data-action="divide">÷</button>
-  <button class="equals" data-action="equals">=</button>
-</section>
+        <!-- Row 1 -->
+        <button class="clear">C</button>
+        <button class="sqrt">√</button>
+        <button data-operator="%">%</button>
+        <button data-operator="/">÷</button>
 
+        <!-- Row 2 -->
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-operator="*">×</button>
+
+        <!-- Row 3 -->
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-operator="-">−</button>
+
+        <!-- Row 4 -->
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-operator="+">+</button>
+
+        <!-- Row 5 -->
+        <button data-number="0" class="zero">0</button>
+        <button data-number=".">.</button>
+        <button class="equals">=</button>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="calculator.js"></script>
 </body>
 </html>
